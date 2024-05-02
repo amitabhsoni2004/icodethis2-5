@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap15 {
+    gap: 15px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap0 {
+    gap: 0px;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.gap40 {
+    gap: 40px;
+}
+
+.gap60 {
+    gap: 60px;
+}
+
+.padding20 {
+    /* padding: 50px 30px; */
+}
+
+.padding0 {
+    padding: 0px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.pointer {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Smooth transition for rotation */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.products {
+    /* height: 100%; */
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 20px 30px 128px 30px;
+    position: relative;
+}
+
+.btns {
+    padding: 10px 20px;
+    border: 0.1px solid gray;
+    border-radius: 20px;
+    margin: 0px 7px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+}
+
+.btn2 {
+    background-color: #0f1833;
+    color: white;
+}
+
+hr {
+    position: absolute;
+    width: 100%;
+    top: 84px;
+    left: 0;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: #0f1833;
+}
+
+ul li {
+    /* font-size: 16px; */
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+}
+
+ul li:hover {
+    color: gray;
+}
+
+.productSection {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.productSection .article {
+    /* border: 2px solid black; */
+    /* width: 50%; */
+}
+
+.productSection .aside {
+    /* width: 50%; */
+    /* border: 2px solid black; */
+}
+
+.img1 {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.img1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.img1 img,
+.articleimg {
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+}
+
+.img1 img:hover,
+.articleimg:hover {
+    transform: scale(1.1);
+}
+
+.h1 {
+    position: absolute;
+    top: 175px;
+    font-size: 45px;
+    color: #0f1833;
+    font-weight: 600;
+}
+
+.h3 {
+    color: #0f1833;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.author {
+    margin-top: 10px;
+}
+
+.author img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.author p {
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.articleimg {
+    height: 110px;
+    width: 160px;
+    border-radius: 2px;
+}
+
+.p1s {
+    font-weight: 700;
+    color: #0f1833;
+}
+
+.h2 {
+    display: none;
+    color: #0f1833;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.hamburger,
+.close {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .productSection {
+        flex-direction: column;
+    }
+
+    .btns {
+        padding: 7px 10px;
+        margin: 0px 2px;
+    }
+
+    .h2 {
+        display: flex;
+    }
+
+    .ul1 {
+        gap: 10px;
+        display: none;
+    }
+
+    .products {
+        padding: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:590px) {
+    .img1 {
+        height: 200px;
+    }
+
+    .articleimg {
+        height: 100px;
+        width: 120px;
+    }
+
+    .ul2 {
+        flex-direction: column;
+    }
+
+    .nav {
+        align-items: flex-start !important;
+
+        background: rgba(255, 255, 255, 0.68);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+        padding: 70px 15px;
+        border-radius: 5px;
+        transition: all 1s ease-out;
+        z-index: 1;
+        transform: translateX(-1000px);
+    }
+
+    .hamburger,
+    .close {
+        display: block;
+    }
+
+    .h1 {
+        top: 135px;
+    }
+
+    .productSection {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .btn1 {
+        display: none;
+    }
+
+    .h1 {
+        font-size: 35px;
+    }
+}
+
